@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-wrapper">
+        <header class="top-bar">
+            <h1>🃏 카드 짝 맞추기</h1>
+            <div class="stats">
+                <span>시도: <strong id="moves">0</strong>회</span>
+                <span>맞춘 쌍: <strong id="matched-count">0</strong> / 8</span>
+                <span>최고 기록: <strong id="best-moves">-</strong></span>
+            </div>
+        </header>
+        <section id="board" class="board" aria-label="카드 게임판"></section>
+        <p id="status-message" class="status-message">카드를 눌러 같은 그림 8쌍을 찾아보세요!</p>
+        <button id="restart-btn" class="restart-btn">다시 섞기</button>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
